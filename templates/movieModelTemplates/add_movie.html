@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Movie</title>
+</head>
+<body>
+    <h1> Add movie details</h1>
+    <form method="post">
+        {{ movie_form.as_p }}
+        {% csrf_token %}
+        <br/>
+        <input value="Add movie" type="submit" />
+    </form>
+</body>
+</html>
